@@ -10,8 +10,7 @@ public class Mentoria extends Conteudos {
 
     LocalDate data;
 
-    @Override
-    public double caucularxp() {
+    public double calcularxp() {
         return XP_PADRAO + 20d;
     }
 
@@ -33,9 +32,13 @@ public class Mentoria extends Conteudos {
 
     @Override
     public String toString() {
-        return "Curso{" + "titulo = " + getTitulo() + ", descri\u00e7\u00e3o = " + getDecricao() + "data=" + data + '}';
+        return "Curso{" + "titulo = " + getTitulo() + ", descri\u00e7\u00e3o = " + getDescricao() + "data=" + data + '}';
 
     }
 
-}
+    @Override
+    public double caucularxp() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
+}
