@@ -47,17 +47,35 @@ public class DesafioDioPoo {
         bootcamp.getConteudos().add(mentoria);
 
         Devs mateus = new Devs();
+
         mateus.setNome("Mateus");
+        System.out.println(mateus.getNome());
+        System.out.println("");
         mateus.InscreverBootcamp(bootcamp);
         System.out.println("Conteudos Inscritos" + mateus.getConteudosInscritos());
-        System.out.println("Conteudos Inscritos" + mateus.getConteudosConcluidos());
+        mateus.progredir();
+        System.out.println("-");
+        System.out.println("Conteudos Inscritos" + mateus.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos" + mateus.getConteudosConcluidos());
+        System.out.println("-------------");
+        System.out.println("");
+        System.out.println("Xp: " + mateus.calcularTotalXp());
 
         Devs camila = new Devs();
-        camila.setNome("Camila");
-        camila.InscreverBootcamp(bootcamp);
-        System.out.println("Conteudos Inscritos" + camila.getConteudosInscritos());
-        System.out.println("Conteudos Inscritos" + camila.getConteudosConcluidos());
 
+        camila.setNome("Camila");
+        System.out.println(camila.getNome());
+        System.out.println("");
+        camila.InscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos" + mateus.getConteudosInscritos());
+        camila.progredir();
+        camila.progredir();
+        camila.progredir();
+
+        System.out.println("-");
+        System.out.println("Conteudos Inscritos" + camila.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos" + camila.getConteudosConcluidos());
+        System.out.println("Xp: " + camila.calcularTotalXp());
     }
 
 }

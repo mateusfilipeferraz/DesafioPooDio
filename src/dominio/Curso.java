@@ -8,6 +8,7 @@ public class Curso extends Conteudos {
 
     private int cargaHoraria;
 
+    @Override
     public double calcularXp() {
         return XP_PADRAO * cargaHoraria;
     }
@@ -34,9 +35,6 @@ public class Curso extends Conteudos {
         return "Curso{" + "titulo = " + getTitulo() + ", descri\u00e7\u00e3o = " + getDescricao() + ", cargaHoraria = " + cargaHoraria + '}';
     }
 
-    @Override
-    public double caucularxp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 
 }

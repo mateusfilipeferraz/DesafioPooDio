@@ -10,7 +10,8 @@ public class Mentoria extends Conteudos {
 
     LocalDate data;
 
-    public double calcularxp() {
+    @Override
+    public double calcularXp() {
         return XP_PADRAO + 20d;
     }
 
@@ -36,9 +37,5 @@ public class Mentoria extends Conteudos {
 
     }
 
-    @Override
-    public double caucularxp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+    
 }

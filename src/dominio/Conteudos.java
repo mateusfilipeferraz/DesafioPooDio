@@ -11,7 +11,7 @@ public abstract class Conteudos {
     private String titulo;
     private String descricao;
 
-    public abstract double caucularxp();
+    public abstract double calcularXp();
 
     public String getTitulo() {
         return titulo;
